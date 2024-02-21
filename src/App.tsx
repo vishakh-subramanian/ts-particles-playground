@@ -1,29 +1,34 @@
-import { useCallback } from "react";
-import { Particles } from "react-tsparticles";
-import { Container, Engine } from "tsparticles-engine";
-import { loadSlim } from "tsparticles-slim";
+import React, { useEffect } from "react";
 import "./App.css";
-import options from "./helpers/snow";
+import DropDown from "./components/DropDown";
+import { BackgroundMaskPage } from "./pages/bOptions/BackgroundMask";
+import { ShadowPage } from "./pages/sOptions/ShadowPage";
+import { SnowPage } from "./pages/sOptions/SnowPage";
+import { SpinPage } from "./pages/sOptions/SpinPage";
+import { StarPage } from "./pages/sOptions/StarPage";
+import { ShapeArrowPage } from "./pages/sOptions/ShapeArrow";
+// import { SeaAnemonePage } from "./pages/sOptions/SeaAnemone";
 
 function App() {
-  const initParticles = useCallback(async (engine: Engine) => {
-    console.log(engine);
-    await loadSlim(engine);
-  }, []);
-  const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      await console.log(container);
-    },
-    []
-  );
+  const [currOptions, setCurrOptions] = React.useState("Snow");
+
+  useEffect(() => {
+    console.log(currOptions);
+  }, [currOptions]);
+
   return (
     <div className="App">
-      <Particles
-        id="bgParticles"
-        init={initParticles}
-        loaded={particlesLoaded}
-        options={options}
-      />
+      <DropDown
+        currOptions={currOptions}
+        setCurrOptions={setCurrOptions}
+      ></DropDown>
+      {currOptions === "Snow" && <SnowPage />}
+      {currOptions === "Shadow" && <ShadowPage />}
+      {currOptions === "Spin" && <SpinPage />}
+      {currOptions === "Star" && <StarPage />}
+      {/* {currOptions === "Sea Anemone" && <SeaAnemonePage />} */}
+      {currOptions === "Background Mask" && <BackgroundMaskPage />}
+      {currOptions === "Shape Arrow" && <ShapeArrowPage />}
     </div>
   );
 }

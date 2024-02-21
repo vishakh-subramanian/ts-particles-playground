@@ -1,6 +1,6 @@
-import { IOptions, RecursivePartial } from "tsparticles-engine";
+import { ISourceOptions } from "tsparticles-engine";
 
-const options: RecursivePartial<IOptions> | undefined = {
+const options: ISourceOptions = {
   key: "snow",
   name: "Snow",
   particles: {
