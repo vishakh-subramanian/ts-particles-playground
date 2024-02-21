@@ -1,7 +1,7 @@
-import React, { useCallback } from 'react';
-import { Container, Engine } from 'tsparticles-engine';
-import { loadSlim } from 'tsparticles-slim';
-import allOptions from '../../configs';
+import React, { useCallback } from "react";
+import { Container, Engine } from "tsparticles-engine";
+import { loadSlim } from "tsparticles-slim";
+import allOptions from "../../configs";
 import { Particles } from "react-tsparticles";
 
 export const BackgroundMaskPage: React.FC = () => {
@@ -17,7 +17,12 @@ export const BackgroundMaskPage: React.FC = () => {
   );
   return (
     <div className="BackgroundMaskPage">
-      <Particles id="backgroundMaskParticles" init={initParticles} loaded={particlesLoaded} options={allOptions.bOptions.backgroundMask} />
+      <Particles
+        id="backgroundMaskParticles"
+        init={initParticles}
+        loaded={particlesLoaded}
+        options={allOptions.bOptions.backgroundMask}
+      />
     </div>
   );
-}
+};

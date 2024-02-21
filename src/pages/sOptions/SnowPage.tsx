@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react';
-import { Container, Engine } from 'tsparticles-engine';
-import { loadSlim } from 'tsparticles-slim';
-import allOptions from '../../configs';
+import React, { useCallback } from "react";
 import { Particles } from "react-tsparticles";
+import { Container, Engine } from "tsparticles-engine";
+import { loadSlim } from "tsparticles-slim";
+import allOptions from "../../configs";
 
 export const SnowPage: React.FC = () => {
   const initParticles = useCallback(async (engine: Engine) => {
@@ -17,7 +17,12 @@ export const SnowPage: React.FC = () => {
   );
   return (
     <div className="SnowPage">
-      <Particles id="snowParticles" init={initParticles} loaded={particlesLoaded} options={allOptions.sOptions.snow} />
+      <Particles
+        id="snowParticles"
+        init={initParticles}
+        loaded={particlesLoaded}
+        options={allOptions.sOptions.snow}
+      />
     </div>
   );
-}
+};

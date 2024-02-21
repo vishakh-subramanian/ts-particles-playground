@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react';
-import { Container, Engine } from 'tsparticles-engine';
-import { loadSlim } from 'tsparticles-slim';
-import allOptions from '../../configs';
+import React, { useCallback } from "react";
 import { Particles } from "react-tsparticles";
+import { Container, Engine } from "tsparticles-engine";
+import { loadSlim } from "tsparticles-slim";
+import allOptions from "../../configs";
 
 // TODO: Currently broken, nothing loads in browser
 
@@ -19,7 +19,12 @@ export const SeaAnemonePage: React.FC = () => {
   );
   return (
     <div className="SeaAnemonePage">
-      <Particles id="seaAnemoneParticles" init={initParticles} loaded={particlesLoaded} options={allOptions.sOptions.seaAnemone} />
+      <Particles
+        id="seaAnemoneParticles"
+        init={initParticles}
+        loaded={particlesLoaded}
+        options={allOptions.sOptions.seaAnemone}
+      />
     </div>
   );
-}
+};

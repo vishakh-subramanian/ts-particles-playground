@@ -4,7 +4,9 @@ import { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 import allOptions from "../../configs";
 
-export const ShadowPage: React.FC = () => {
+// TODO: Currently broken, nothing loads in browser
+
+export const ShapeCogPage: React.FC = () => {
   const initParticles = useCallback(async (engine: Engine) => {
     console.log(engine);
     await loadSlim(engine);
@@ -16,12 +18,12 @@ export const ShadowPage: React.FC = () => {
     []
   );
   return (
-    <div className="ShadowPage">
+    <div className="ShapeCogPage">
       <Particles
-        id="shadowParticles"
+        id="shapeCogParticles"
         init={initParticles}
         loaded={particlesLoaded}
-        options={allOptions.sOptions.shadow}
+        options={allOptions.sOptions.shapeCog}
       />
     </div>
   );

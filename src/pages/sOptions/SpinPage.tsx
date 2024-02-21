@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react';
-import { Container, Engine } from 'tsparticles-engine';
-import { loadSlim } from 'tsparticles-slim';
-import allOptions from '../../configs';
+import React, { useCallback } from "react";
 import { Particles } from "react-tsparticles";
+import { Container, Engine } from "tsparticles-engine";
+import { loadSlim } from "tsparticles-slim";
+import allOptions from "../../configs";
 
 export const SpinPage: React.FC = () => {
   const initParticles = useCallback(async (engine: Engine) => {
@@ -17,7 +17,12 @@ export const SpinPage: React.FC = () => {
   );
   return (
     <div className="SpinPage">
-      <Particles id="spinParticles" init={initParticles} loaded={particlesLoaded} options={allOptions.sOptions.spin} />
+      <Particles
+        id="spinParticles"
+        init={initParticles}
+        loaded={particlesLoaded}
+        options={allOptions.sOptions.spin}
+      />
     </div>
   );
-}
+};

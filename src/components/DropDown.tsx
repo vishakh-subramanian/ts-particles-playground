@@ -1,8 +1,8 @@
-import React from "react";
+import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
+import React from "react";
 import "./DropDown.css";
 
 interface DropDownProps {
@@ -39,7 +39,21 @@ export const DropDown: React.FC<DropDownProps> = ({
         setCurrOptions("Background Mask");
         break;
       case "70":
+        // currently not supported
         setCurrOptions("Shape Arrow");
+        break;
+      case "80":
+        // currently not supported
+        setCurrOptions("Shape Cog");
+        break;
+      case "90":
+        setCurrOptions("Slow");
+        break;
+      case "100":
+        setCurrOptions("Absorbers");
+        break;
+      case "110":
+        setCurrOptions("Among Us");
         break;
       default:
         break;
@@ -60,13 +74,17 @@ export const DropDown: React.FC<DropDownProps> = ({
         onChange={handleChange}
         label="Background"
       >
+        <MenuItem value={100}>Absorbers</MenuItem>
+        <MenuItem value={110}>Among Us</MenuItem>
         <MenuItem value={60}>Background Mask</MenuItem>
+        {/* <MenuItem value={50}>Sea Anemone</MenuItem> */}
         <MenuItem value={20}>Shadow</MenuItem>
         {/* <MenuItem value={70}>Shape Arrow</MenuItem> */}
+        {/* <MenuItem value={80}>Shape Cog</MenuItem> */}
+        <MenuItem value={90}>Slow</MenuItem>
         <MenuItem value={10}>Snow</MenuItem>
         <MenuItem value={30}>Spin</MenuItem>
         <MenuItem value={40}>Star</MenuItem>
-        {/* <MenuItem value={50}>Sea Anemone</MenuItem> */}
       </Select>
     </FormControl>
   );

@@ -4,7 +4,7 @@ import { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 import allOptions from "../../configs";
 
-export const ShadowPage: React.FC = () => {
+export const SlowPage: React.FC = () => {
   const initParticles = useCallback(async (engine: Engine) => {
     console.log(engine);
     await loadSlim(engine);
@@ -16,12 +16,12 @@ export const ShadowPage: React.FC = () => {
     []
   );
   return (
-    <div className="ShadowPage">
+    <div className="SlowPage">
       <Particles
-        id="shadowParticles"
+        id="slowParticles"
         init={initParticles}
         loaded={particlesLoaded}
-        options={allOptions.sOptions.shadow}
+        options={allOptions.sOptions.slow}
       />
     </div>
   );

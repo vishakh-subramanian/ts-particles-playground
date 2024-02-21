@@ -4,7 +4,9 @@ import { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 import allOptions from "../../configs";
 
-export const ShadowPage: React.FC = () => {
+// Among Us character doesn't appear
+
+export const AmongUsPage: React.FC = () => {
   const initParticles = useCallback(async (engine: Engine) => {
     console.log(engine);
     await loadSlim(engine);
@@ -16,12 +18,12 @@ export const ShadowPage: React.FC = () => {
     []
   );
   return (
-    <div className="ShadowPage">
+    <div className="AmongUsPage">
       <Particles
-        id="shadowParticles"
+        id="amongUsParticles"
         init={initParticles}
         loaded={particlesLoaded}
-        options={allOptions.sOptions.shadow}
+        options={allOptions.aOptions.amongUs}
       />
     </div>
   );
