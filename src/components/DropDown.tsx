@@ -55,6 +55,18 @@ export const DropDown: React.FC<DropDownProps> = ({
       case "110":
         setCurrOptions("Among Us");
         break;
+      case "120":
+        setCurrOptions("Basic");
+        break;
+      case "130":
+        setCurrOptions("Big");
+        break;
+      case "140":
+        setCurrOptions("Black Hole");
+        break;
+      case "150":
+        setCurrOptions("Bubble");
+        break;
       default:
         break;
     }
@@ -77,6 +89,10 @@ export const DropDown: React.FC<DropDownProps> = ({
         <MenuItem value={100}>Absorbers</MenuItem>
         <MenuItem value={110}>Among Us</MenuItem>
         <MenuItem value={60}>Background Mask</MenuItem>
+        <MenuItem value={120}>Basic</MenuItem>
+        <MenuItem value={130}>Big</MenuItem>
+        <MenuItem value={140}>Black Hole</MenuItem>
+        <MenuItem value={150}>Bubble</MenuItem>
         {/* <MenuItem value={50}>Sea Anemone</MenuItem> */}
         <MenuItem value={20}>Shadow</MenuItem>
         {/* <MenuItem value={70}>Shape Arrow</MenuItem> */}
