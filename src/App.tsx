@@ -1,42 +1,11 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import DropDown from "./components/DropDown";
-import { AbsorbersPage } from "./pages/aOptions/AbsorbersPage";
-import { AmongUsPage } from "./pages/aOptions/AmongUsPage";
-import { BackgroundMaskPage } from "./pages/bOptions/BackgroundMaskPage";
-import { BasicPage } from "./pages/bOptions/BasicPage";
-import { BigPage } from "./pages/bOptions/BigPage";
-import { BlackHolePage } from "./pages/bOptions/BlackHolePage";
-import { BubblePage } from "./pages/bOptions/BubblePage";
-import { CardsPage } from "./pages/cOptions/cardsPage";
-import { CharsPage } from "./pages/cOptions/charsPage";
-import { ClickConfettiPage } from "./pages/cOptions/clickConfettiPage";
-import { ClickPausePage } from "./pages/cOptions/clickPausePage";
-import { CollisionsAbsorbPage } from "./pages/cOptions/collisionsAbsorbPage";
-import { CollisionsBouncePage } from "./pages/cOptions/collisionsBouncePage";
-import { CollisionsDestroyPage } from "./pages/cOptions/collisionsDestroyPage";
-import { ColorAnimationPage } from "./pages/cOptions/colorAnimationPage";
-import { CurlNoisePage } from "./pages/cOptions/curlNoisePage";
-import { DataImagesPage } from "./pages/dOptions/dataImagesPage";
-import { DelayColorPage } from "./pages/dOptions/delayColorPage";
-import { DelayOpacityPage } from "./pages/dOptions/delayOpacityPage";
-import { DelayPage } from "./pages/dOptions/delayPage";
-import { DelaySizePage } from "./pages/dOptions/delaySizePage";
-import { DestroyPage } from "./pages/dOptions/destroyPage";
-import { DisappearingPage } from "./pages/dOptions/disappearingPage";
-import { DivEventsPage } from "./pages/dOptions/divEventsPage";
-import { SeaAnemonePage } from "./pages/sOptions/SeaAnemonePage";
-import { ShadowPage } from "./pages/sOptions/ShadowPage";
-import { ShapeArrowPage } from "./pages/sOptions/ShapeArrowPage";
-import { ShapeCogPage } from "./pages/sOptions/ShapeCogPage";
-import { SlowPage } from "./pages/sOptions/SlowPage";
-import { SnowPage } from "./pages/sOptions/SnowPage";
-import { SpinPage } from "./pages/sOptions/SpinPage";
-import { StarPage } from "./pages/sOptions/StarPage";
-import { DelayStrokeColorPage } from "./pages/dOptions/delayStrokeColorPage";
+import "./pages/index";
+import * as AllPages from "./pages/index";
 
 function App() {
-  const [currOptions, setCurrOptions] = React.useState("Snow");
+  const [currOptions, setCurrOptions] = React.useState("Basic");
 
   useEffect(() => {
     console.log(currOptions);
@@ -48,39 +17,75 @@ function App() {
         currOptions={currOptions}
         setCurrOptions={setCurrOptions}
       ></DropDown>
-      {currOptions === "Absorbers" && <AbsorbersPage />}
-      {currOptions === "Among Us" && <AmongUsPage />}
-      {currOptions === "Background Mask" && <BackgroundMaskPage />}
-      {currOptions === "Basic" && <BasicPage />}
-      {currOptions === "Big" && <BigPage />}
-      {currOptions === "Black Hole" && <BlackHolePage />}
-      {currOptions === "Bubble" && <BubblePage />}
-      {currOptions === "Cards" && <CardsPage />}
-      {currOptions === "Chars" && <CharsPage />}
-      {currOptions === "Click Confetti" && <ClickConfettiPage />}
-      {currOptions === "Click Pause" && <ClickPausePage />}
-      {currOptions === "Collisions Absorb" && <CollisionsAbsorbPage />}
-      {currOptions === "Collisions Bounce" && <CollisionsBouncePage />}
-      {currOptions === "Collisions Destroy" && <CollisionsDestroyPage />}
-      {currOptions === "Color Animation" && <ColorAnimationPage />}
-      {currOptions === "Curl Noise" && <CurlNoisePage />}
-      {currOptions === "Data Images" && <DataImagesPage />}
-      {currOptions === "Delay Color" && <DelayColorPage />}
-      {currOptions === "Delay Opacity" && <DelayOpacityPage />}
-      {currOptions === "Delay" && <DelayPage />}
-      {currOptions === "Delay Size" && <DelaySizePage />}
-      {currOptions === "Delay Stroke Color" && <DelayStrokeColorPage />}
-      {currOptions === "Destroy" && <DestroyPage />}
-      {currOptions === "Disappearing" && <DisappearingPage />}
-      {currOptions === "Div Events" && <DivEventsPage />}
-      {currOptions === "Sea Anemone" && <SeaAnemonePage />}
-      {currOptions === "Shadow" && <ShadowPage />}
-      {currOptions === "Shape Arrow" && <ShapeArrowPage />}
-      {currOptions === "Shape Cog" && <ShapeCogPage />}
-      {currOptions === "Slow" && <SlowPage />}
-      {currOptions === "Snow" && <SnowPage />}
-      {currOptions === "Spin" && <SpinPage />}
-      {currOptions === "Star" && <StarPage />}
+      {currOptions === "Absorbers" && <AllPages.AbsorbersPage />}
+      {currOptions === "Among Us" && <AllPages.AmongUsPage />}
+      {currOptions === "Background Mask" && <AllPages.BackgroundMaskPage />}
+      {currOptions === "Basic" && <AllPages.BasicPage />}
+      {currOptions === "Big" && <AllPages.BigPage />}
+      {currOptions === "Black Hole" && <AllPages.BlackHolePage />}
+      {currOptions === "Bubble" && <AllPages.BubblePage />}
+      {currOptions === "Cards" && <AllPages.CardsPage />}
+      {currOptions === "Chars" && <AllPages.CharsPage />}
+      {currOptions === "Click Confetti" && <AllPages.ClickConfettiPage />}
+      {currOptions === "Click Pause" && <AllPages.ClickPausePage />}
+      {currOptions === "Collisions Absorb" && <AllPages.CollisionsAbsorbPage />}
+      {currOptions === "Collisions Bounce" && <AllPages.CollisionsBouncePage />}
+      {currOptions === "Collisions Destroy" && (
+        <AllPages.CollisionsDestroyPage />
+      )}
+      {currOptions === "Color Animation" && <AllPages.ColorAnimationPage />}
+      {currOptions === "Curl Noise" && <AllPages.CurlNoisePage />}
+      {currOptions === "Data Images" && <AllPages.DataImagesPage />}
+      {currOptions === "Delay Color" && <AllPages.DelayColorPage />}
+      {currOptions === "Delay Opacity" && <AllPages.DelayOpacityPage />}
+      {currOptions === "Delay" && <AllPages.DelayPage />}
+      {currOptions === "Delay Size" && <AllPages.DelaySizePage />}
+      {currOptions === "Delay Stroke Color" && (
+        <AllPages.DelayStrokeColorPage />
+      )}
+      {currOptions === "Destroy" && <AllPages.DestroyPage />}
+      {currOptions === "Disappearing" && <AllPages.DisappearingPage />}
+      {currOptions === "Div Events" && <AllPages.DivEventsPage />}
+      {currOptions === "Effect Bubble" && <AllPages.EffectBubblePage />}
+      {currOptions === "Effect Trail" && <AllPages.EffectTrailPage />}
+      {currOptions === "Emitter Absorber" && <AllPages.EmitterAbsorberPage />}
+      {currOptions === "Emitter Angled" && <AllPages.EmitterAngledPage />}
+      {currOptions === "Emitter Image Shape" && (
+        <AllPages.EmitterImageShapePage />
+      )}
+      {currOptions === "Emitter Images" && <AllPages.EmitterImagesPage />}
+      {currOptions === "Emitter" && <AllPages.EmitterPage />}
+      {currOptions === "Emitter Paths" && <AllPages.EmitterPathsPage />}
+      {currOptions === "Emitter Shapes" && <AllPages.EmitterShapesPage />}
+      {currOptions === "Emitter Spawn Color" && (
+        <AllPages.EmitterSpawnColorPage />
+      )}
+      {currOptions === "Emitter Text Shape" && (
+        <AllPages.EmitterTextShapePage />
+      )}
+      {currOptions === "Emitter Text Stroke Shape" && (
+        <AllPages.EmitterTextStrokeShapePage />
+      )}
+      {currOptions === "Fireworks 2" && <AllPages.Fireworks2Page />}
+      {currOptions === "Fireworks" && <AllPages.FireworksPage />}
+      {currOptions === "Fontawesome" && <AllPages.FontawesomePage />}
+      {currOptions === "Forward" && <AllPages.ForwardPage />}
+      {currOptions === "Gifs" && <AllPages.GifsPage />}
+      {currOptions === "Grab Random Color" && <AllPages.GrabRandomColorPage />}
+      {currOptions === "Gradients" && <AllPages.GradientsPage />}
+      {currOptions === "Gravity" && <AllPages.GravityPage />}
+      {currOptions === "Growing" && <AllPages.GrowingPage />}
+      {currOptions === "Hexagon Path" && <AllPages.HexagonPathPage />}
+      {currOptions === "Hollow Knight" && <AllPages.HollowknightPage />}
+      {currOptions === "Hyperspace" && <AllPages.HyperspacePage />}
+      {currOptions === "Image Mask" && <AllPages.ImageMaskPage />}
+      {currOptions === "Images Directions" && <AllPages.ImagesDirectionsPage />}
+      {currOptions === "Images" && <AllPages.ImagesPage />}
+      {currOptions === "Infection" && <AllPages.InfectionPage />}
+      {currOptions === "Life" && <AllPages.LifePage />}
+      {currOptions === "Light Hover" && <AllPages.LightHoverPage />}
+      {currOptions === "Link Triangles" && <AllPages.LinkTrianglesPage />}
+      {currOptions === "Local Polygon Mask" && <AllPages.LocalPolygonMaskPage />}
     </div>
   );
 }

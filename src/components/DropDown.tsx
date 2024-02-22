@@ -14,169 +14,194 @@ export const DropDown: React.FC<DropDownProps> = ({
   currOptions,
   setCurrOptions,
 }) => {
-  const [option, setOption] = React.useState("");
+  const [option1, setOption1] = React.useState("");
+  const [option2, setOption2] = React.useState("");
+  const getKeyString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  const optionMap: { [key: string]: { value: number; label: string }[] } = {
+    A: [
+      { value: 1, label: "Absorbers" },
+      { value: 2, label: "Among Us" },
+    ],
+    B: [
+      { value: 101, label: "Background Mask" },
+      { value: 102, label: "Basic" },
+      { value: 103, label: "Big" },
+      { value: 104, label: "Black Hole" },
+      { value: 105, label: "Bubble" },
+    ],
+    C: [
+      // { value: 201, label: "Cards" },
+      { value: 201, label: "Chars" },
+      // { value: 202, label: "Click Confetti" },
+      { value: 202, label: "Click Pause" },
+      { value: 203, label: "Collisions Absorb" },
+      { value: 204, label: "Collisions Bounce" },
+      { value: 205, label: "Collisions Destroy" },
+      { value: 206, label: "Color Animation" },
+      { value: 207, label: "Curl Noise" },
+    ],
+    D: [
+      { value: 301, label: "Data Images" },
+      { value: 302, label: "Delay Color" },
+      { value: 303, label: "Delay Opacity" },
+      { value: 304, label: "Delay" },
+      { value: 305, label: "Delay Size" },
+      { value: 306, label: "Delay Stroke Color" },
+      { value: 307, label: "Destroy" },
+      { value: 308, label: "Disappearing" },
+      { value: 309, label: "Div Events" },
+    ],
+    E: [
+      { value: 401, label: "Effect Bubble" },
+      { value: 402, label: "Effect Trail" },
+      // { value: 403, label: "Emitter Absorber" },
+      // { value: 404, label: "Emitter Angled" },
+      // { value: 405, label: "Emitter Image Shape" },
+      // { value: 406, label: "Emitter Images" },
+      { value: 403, label: "Emitter" },
+      // { value: 408, label: "Emitter Paths" },
+      // { value: 409, label: "Emitter Shapes" },
+      // { value: 410, label: "Emitter Spawn Color" },
+      // { value: 411, label: "Emitter Text Shape" },
+      // { value: 412, label: "Emitter Text Stroke Shape" },
+    ],
+    F: [
+      // { value: 501, label: "Fireworks 2" },
+      // { value: 502, label: "Fireworks" },
+      { value: 501, label: "Fontawesome" },
+      { value: 502, label: "Forward" },
+    ],
+    G: [
+      { value: 601, label: "Gifs" },
+      { value: 602, label: "Grab Random Color" },
+      { value: 603, label: "Gradients" },
+      // { value: 604, label: "Gravity" },
+      // { value: 605, label: "Growing" },
+    ],
+    H: [
+      // { value: 701, label: "Hexagon Path" },
+      { value: 701, label: "Hollow Knight" },
+      // { value: 703, label: "Hyperspace" },
+    ],
+    I: [
+      { value: 801, label: "Image Mask" },
+      { value: 802, label: "Images Directions" },
+      { value: 803, label: "Images" }, // images has bugs
+      // { value: 804, label: "Infection "},
+    ],
+    J: [],
+    K: [],
+    L: [
+      { value: 1101, label: "Life" },
+      { value: 1102, label: "Light Hover" },
+      { value: 1103, label: "Link Triangles" },
+      { value: 1104, label: "Local Polygon Mask" },
+    ],
+    M: [],
+    N: [],
+    O: [],
+    P: [],
+    Q: [],
+    R: [],
+    S: [],
+    T: [],
+    U: [],
+    V: [],
+    W: [],
+    X: [],
+    Y: [],
+    Z: [],
+  };
 
   const handleChange = (event: SelectChangeEvent) => {
-    setOption(event.target.value);
-    switch (event.target.value.toString()) {
-      case "10":
-        setCurrOptions("Snow");
-        break;
-      case "20":
-        setCurrOptions("Shadow");
-        break;
-      case "30":
-        setCurrOptions("Spin");
-        break;
-      case "40":
-        setCurrOptions("Star");
-        break;
-      case "50":
-        // currently not supported
-        setCurrOptions("Sea Anemone");
-        break;
-      case "60":
-        setCurrOptions("Background Mask");
-        break;
-      case "70":
-        // currently not supported
-        setCurrOptions("Shape Arrow");
-        break;
-      case "80":
-        // currently not supported
-        setCurrOptions("Shape Cog");
-        break;
-      case "90":
-        setCurrOptions("Slow");
-        break;
-      case "100":
-        setCurrOptions("Absorbers");
-        break;
-      case "110":
-        setCurrOptions("Among Us");
-        break;
-      case "120":
-        setCurrOptions("Basic");
-        break;
-      case "130":
-        setCurrOptions("Big");
-        break;
-      case "140":
-        setCurrOptions("Black Hole");
-        break;
-      case "150":
-        setCurrOptions("Bubble");
-        break;
-      case "160":
-        // currently not supported
-        setCurrOptions("Cards");
-        break;
-      case "170":
-        setCurrOptions("Chars");
-        break;
-      case "180":
-        // currently not supported
-        setCurrOptions("Click Confetti");
-        break;
-      case "190":
-        setCurrOptions("Click Pause");
-        break;
-      case "200":
-        setCurrOptions("Collisions Absorb");
-        break;
-      case "210":
-        setCurrOptions("Collisions Bounce");
-        break;
-      case "220":
-        setCurrOptions("Collisions Destroy");
-        break;
-      case "230":
-        setCurrOptions("Color Animation");
-        break;
-      case "240":
-        setCurrOptions("Curl Noise");
-        break;
-      case "250":
-        setCurrOptions("Data Images");
-        break;
-      case "260":
-        setCurrOptions("Delay Color");
-        break;
-      case "270":
-        setCurrOptions("Delay Opacity");
-        break;
-      case "280":
-        setCurrOptions("Delay");
-        break;
-      case "290":
-        setCurrOptions("Delay Size");
-        break;
-      case "300":
-        setCurrOptions("Delay Stroke Color");
-        break;
-      case "310":
-        setCurrOptions("Destroy");
-        break;
-      case "320":
-        setCurrOptions("Disappearing");
-        break;
-      case "330":
-        setCurrOptions("Div Events");
-        break;
-      default:
-        break;
+    setOption1(event.target.value);
+    const index: number = getKeyString.indexOf(event.target.value) * 100;
+    setOption2((index + 1).toString());
+    const currOption = optionMap[event.target.value].find(
+      (element) => element.value === index + 1
+    );
+    if (currOption?.label) {
+      setCurrOptions(currOption.label);
+    }
+  };
+
+  const handleChange2 = (event: SelectChangeEvent) => {
+    setOption2(event.target.value);
+    const numValue: number = Number.parseInt(event.target.value);
+    const letter = getKeyString[Math.floor(numValue / 100)];
+    const currOption = optionMap[letter].find(
+      (element) => element.value === numValue
+    );
+    if (currOption?.label) {
+      setCurrOptions(currOption.label);
     }
   };
 
   return (
-    <FormControl
-      id="form"
-      variant="standard"
-      sx={{ m: 1, minWidth: 120, zIndex: 1 }}
-    >
-      <InputLabel id="input-label">Background</InputLabel>
-      <Select
-        labelId="demo-simple-select-standard-label"
-        id="select"
-        value={option}
-        onChange={handleChange}
-        label="Background"
+    <>
+      <FormControl
+        id="form"
+        variant="standard"
+        sx={{ m: 1, minWidth: 120, zIndex: 1 }}
       >
-        <MenuItem value={100}>Absorbers</MenuItem>
-        <MenuItem value={110}>Among Us</MenuItem>
-        <MenuItem value={60}>Background Mask</MenuItem>
-        <MenuItem value={120}>Basic</MenuItem>
-        <MenuItem value={130}>Big</MenuItem>
-        <MenuItem value={140}>Black Hole</MenuItem>
-        <MenuItem value={150}>Bubble</MenuItem>
-        {/* <MenuItem value={160}>Cards</MenuItem> */}
-        <MenuItem value={170}>Chars</MenuItem>
-        {/* <MenuItem value={180}>Click Confetti</MenuItem> */}
-        <MenuItem value={190}>Click Pause</MenuItem>
-        <MenuItem value={200}>Collisions Absorb</MenuItem>
-        <MenuItem value={210}>Collisions Bounce</MenuItem>
-        <MenuItem value={220}>Collisions Destroy</MenuItem>
-        <MenuItem value={230}>Color Animation</MenuItem>
-        <MenuItem value={240}>Curl Noise</MenuItem>
-        <MenuItem value={250}>Data Images</MenuItem>
-        <MenuItem value={260}>Delay Color</MenuItem>
-        <MenuItem value={270}>Delay Opacity</MenuItem>
-        <MenuItem value={280}>Delay</MenuItem>
-        <MenuItem value={290}>Delay Size</MenuItem>
-        <MenuItem value={300}>Delay Stroke Color</MenuItem>
-        <MenuItem value={310}>Destroy</MenuItem>
-        <MenuItem value={320}>Disappearing</MenuItem>
-        <MenuItem value={330}>Div Events</MenuItem>
-        {/* <MenuItem value={50}>Sea Anemone</MenuItem> */}
-        <MenuItem value={20}>Shadow</MenuItem>
-        {/* <MenuItem value={70}>Shape Arrow</MenuItem> */}
-        {/* <MenuItem value={80}>Shape Cog</MenuItem> */}
-        <MenuItem value={90}>Slow</MenuItem>
-        <MenuItem value={10}>Snow</MenuItem>
-        <MenuItem value={30}>Spin</MenuItem>
-        <MenuItem value={40}>Star</MenuItem>
-      </Select>
-    </FormControl>
+        <InputLabel id="input-label-1">First Letter</InputLabel>
+        <Select
+          labelId="demo-simple-select-standard-label-1"
+          id="select1"
+          value={option1}
+          onChange={handleChange}
+          label="First Letter"
+        >
+          <MenuItem value="A">A</MenuItem>
+          <MenuItem value="B">B</MenuItem>
+          <MenuItem value="C">C</MenuItem>
+          <MenuItem value="D">D</MenuItem>
+          <MenuItem value="E">E</MenuItem>
+          <MenuItem value="F">F</MenuItem>
+          <MenuItem value="G">G</MenuItem>
+          <MenuItem value="H">H</MenuItem>
+          <MenuItem value="I">I</MenuItem>
+          <MenuItem value="J">J</MenuItem>
+          <MenuItem value="K">K</MenuItem>
+          <MenuItem value="L">L</MenuItem>
+          <MenuItem value="M">M</MenuItem>
+          <MenuItem value="N">N</MenuItem>
+          <MenuItem value="O">O</MenuItem>
+          <MenuItem value="P">P</MenuItem>
+          <MenuItem value="Q">Q</MenuItem>
+          <MenuItem value="R">R</MenuItem>
+          <MenuItem value="S">S</MenuItem>
+          <MenuItem value="T">T</MenuItem>
+          <MenuItem value="U">U</MenuItem>
+          <MenuItem value="V">V</MenuItem>
+          <MenuItem value="W">W</MenuItem>
+          <MenuItem value="X">X</MenuItem>
+          <MenuItem value="Y">Y</MenuItem>
+          <MenuItem value="Z">Z</MenuItem>
+        </Select>
+      </FormControl>
+      <FormControl
+        id="form2"
+        variant="standard"
+        sx={{ m: 1, minWidth: 120, zIndex: 1 }}
+      >
+        <InputLabel id="input-label-2">Background</InputLabel>
+        <Select
+          labelId="demo-simple-select-standard-label-2"
+          id="select2"
+          value={option2}
+          onChange={handleChange2}
+          label="Background"
+        >
+          {option1 && option1[0] && optionMap[option1[0]]
+            ? optionMap[option1[0]].map(function (item) {
+                return <MenuItem value={item.value}>{item.label}</MenuItem>;
+              })
+            : ""}
+        </Select>
+      </FormControl>
+    </>
   );
 };
 
