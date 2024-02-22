@@ -96,6 +96,33 @@ export const DropDown: React.FC<DropDownProps> = ({
       case "240":
         setCurrOptions("Curl Noise");
         break;
+      case "250":
+        setCurrOptions("Data Images");
+        break;
+      case "260":
+        setCurrOptions("Delay Color");
+        break;
+      case "270":
+        setCurrOptions("Delay Opacity");
+        break;
+      case "280":
+        setCurrOptions("Delay");
+        break;
+      case "290":
+        setCurrOptions("Delay Size");
+        break;
+      case "300":
+        setCurrOptions("Delay Stroke Color");
+        break;
+      case "310":
+        setCurrOptions("Destroy");
+        break;
+      case "320":
+        setCurrOptions("Disappearing");
+        break;
+      case "330":
+        setCurrOptions("Div Events");
+        break;
       default:
         break;
     }
@@ -131,6 +158,15 @@ export const DropDown: React.FC<DropDownProps> = ({
         <MenuItem value={220}>Collisions Destroy</MenuItem>
         <MenuItem value={230}>Color Animation</MenuItem>
         <MenuItem value={240}>Curl Noise</MenuItem>
+        <MenuItem value={250}>Data Images</MenuItem>
+        <MenuItem value={260}>Delay Color</MenuItem>
+        <MenuItem value={270}>Delay Opacity</MenuItem>
+        <MenuItem value={280}>Delay</MenuItem>
+        <MenuItem value={290}>Delay Size</MenuItem>
+        <MenuItem value={300}>Delay Stroke Color</MenuItem>
+        <MenuItem value={310}>Destroy</MenuItem>
+        <MenuItem value={320}>Disappearing</MenuItem>
+        <MenuItem value={330}>Div Events</MenuItem>
         {/* <MenuItem value={50}>Sea Anemone</MenuItem> */}
         <MenuItem value={20}>Shadow</MenuItem>
         {/* <MenuItem value={70}>Shape Arrow</MenuItem> */}

@@ -17,6 +17,14 @@ import { CollisionsBouncePage } from "./pages/cOptions/collisionsBouncePage";
 import { CollisionsDestroyPage } from "./pages/cOptions/collisionsDestroyPage";
 import { ColorAnimationPage } from "./pages/cOptions/colorAnimationPage";
 import { CurlNoisePage } from "./pages/cOptions/curlNoisePage";
+import { DataImagesPage } from "./pages/dOptions/dataImagesPage";
+import { DelayColorPage } from "./pages/dOptions/delayColorPage";
+import { DelayOpacityPage } from "./pages/dOptions/delayOpacityPage";
+import { DelayPage } from "./pages/dOptions/delayPage";
+import { DelaySizePage } from "./pages/dOptions/delaySizePage";
+import { DestroyPage } from "./pages/dOptions/destroyPage";
+import { DisappearingPage } from "./pages/dOptions/disappearingPage";
+import { DivEventsPage } from "./pages/dOptions/divEventsPage";
 import { SeaAnemonePage } from "./pages/sOptions/SeaAnemonePage";
 import { ShadowPage } from "./pages/sOptions/ShadowPage";
 import { ShapeArrowPage } from "./pages/sOptions/ShapeArrowPage";
@@ -25,6 +33,7 @@ import { SlowPage } from "./pages/sOptions/SlowPage";
 import { SnowPage } from "./pages/sOptions/SnowPage";
 import { SpinPage } from "./pages/sOptions/SpinPage";
 import { StarPage } from "./pages/sOptions/StarPage";
+import { DelayStrokeColorPage } from "./pages/dOptions/delayStrokeColorPage";
 
 function App() {
   const [currOptions, setCurrOptions] = React.useState("Snow");
@@ -55,6 +64,15 @@ function App() {
       {currOptions === "Collisions Destroy" && <CollisionsDestroyPage />}
       {currOptions === "Color Animation" && <ColorAnimationPage />}
       {currOptions === "Curl Noise" && <CurlNoisePage />}
+      {currOptions === "Data Images" && <DataImagesPage />}
+      {currOptions === "Delay Color" && <DelayColorPage />}
+      {currOptions === "Delay Opacity" && <DelayOpacityPage />}
+      {currOptions === "Delay" && <DelayPage />}
+      {currOptions === "Delay Size" && <DelaySizePage />}
+      {currOptions === "Delay Stroke Color" && <DelayStrokeColorPage />}
+      {currOptions === "Destroy" && <DestroyPage />}
+      {currOptions === "Disappearing" && <DisappearingPage />}
+      {currOptions === "Div Events" && <DivEventsPage />}
       {currOptions === "Sea Anemone" && <SeaAnemonePage />}
       {currOptions === "Shadow" && <ShadowPage />}
       {currOptions === "Shape Arrow" && <ShapeArrowPage />}
