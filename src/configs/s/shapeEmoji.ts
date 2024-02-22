@@ -1,4 +1,3 @@
-// import { type ISourceOptions, MoveDirection } from "@tsparticles/engine";
 import { ISourceOptions } from "tsparticles-engine";
 
 const emitterRate = {
