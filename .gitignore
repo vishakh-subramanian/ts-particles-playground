@@ -4,6 +4,9 @@
 .DS_Store
 .vscode/
 
+#script files
+src/pages/scripters/
+
 # dependencies
 /node_modules
 /.pnp
