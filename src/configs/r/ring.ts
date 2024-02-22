@@ -1,4 +1,4 @@
-import type { ISourceOptions } from "@tsparticles/engine";
+import { ISourceOptions } from "tsparticles-engine";
 
 const options: ISourceOptions = {
     key: "ring",
@@ -6,7 +6,7 @@ const options: ISourceOptions = {
     particles: {
         number: {
             value: 0,
-            limit: { value: 1000 },
+            limit: 1000,
         },
         color: {
             value: "#ffffff",

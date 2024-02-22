@@ -7,7 +7,7 @@ import emitterImageShape from "./emitterImageShape";
 import emitterImages from "./emitterImages";
 import emitterPaths from "./emitterPaths";
 import emitterShapes from "./emitterShapes";
-// import emitterSpawnColor from "./emitterSpawnColor";
+import emitterSpawnColor from "./emitterSpawnColor";
 import emitterTextShape from "./emitterTextShape";
 import emitterTextStrokeShape from "./emitterTextStrokeShape";
 
@@ -21,7 +21,7 @@ const eOptions = {
   emitterImages,
   emitterPaths,
   emitterShapes,
-  // emitterSpawnColor,
+  emitterSpawnColor,
   emitterTextShape,
   emitterTextStrokeShape,
 };

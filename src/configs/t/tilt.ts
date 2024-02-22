@@ -1,4 +1,4 @@
-import type { ISourceOptions } from "@tsparticles/engine";
+import { ISourceOptions } from "tsparticles-engine";
 
 const options: ISourceOptions = {
     key: "tilt",
@@ -45,7 +45,7 @@ const options: ISourceOptions = {
         },
         number: {
             value: 0,
-            limit: { value: 300 },
+            limit: 300,
         },
         opacity: {
             value: 1,

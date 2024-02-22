@@ -7,7 +7,7 @@ import plasma from "./plasma";
 import poisson from "./poisson";
 import polygonMask from "./polygonMask";
 import polygons from "./polygons";
-// import pop from "./pop";
+import pop from "./pop";
 
 const pOptions = {
   parallax,
@@ -19,7 +19,7 @@ const pOptions = {
   poisson,
   polygonMask,
   polygons,
-  // pop,
+  pop,
 };
 
 export default pOptions;

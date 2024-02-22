@@ -1,4 +1,4 @@
-import type { ISourceOptions } from "@tsparticles/engine";
+import { ISourceOptions } from "tsparticles-engine";
 
 const options: ISourceOptions = {
     key: "trailsImage",
@@ -28,7 +28,7 @@ const options: ISourceOptions = {
     particles: {
         number: {
             value: 0,
-            limit: { value: 300 },
+            limit: 300,
         },
         color: {
             value: ["#5bc0eb", "#fde74c", "#9bc53d", "#e55934", "#fa7921"],
