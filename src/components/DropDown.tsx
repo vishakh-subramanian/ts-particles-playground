@@ -3,14 +3,13 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import React from "react";
+import { getKeyString, letterToNum, optionMap } from "../utils/DropDownUtils";
 import "./DropDown.css";
-import { optionMap } from "../utils/OptionMap";
+
 interface DropDownProps {
   currOptions: string;
   setCurrOptions: React.Dispatch<React.SetStateAction<string>>;
 }
-
-const getKeyString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 export const DropDown: React.FC<DropDownProps> = ({
   currOptions,
@@ -21,7 +20,7 @@ export const DropDown: React.FC<DropDownProps> = ({
 
   const handleChange = (event: SelectChangeEvent) => {
     setOption1(event.target.value);
-    const index: number = getKeyString.indexOf(event.target.value) * 100;
+    const index: number = letterToNum[event.target.value] * 100;
     setOption2((index + 1).toString());
     const currOption = optionMap[event.target.value].find(
       (element) => element.value === index + 1

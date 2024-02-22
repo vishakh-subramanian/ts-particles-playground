@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import DropDown from "./components/DropDown";
-import "./pages/index";
 import * as AllPages from "./pages/index";
 
 function App() {
@@ -85,7 +84,9 @@ function App() {
       {currOptions === "Life" && <AllPages.LifePage />}
       {currOptions === "Light Hover" && <AllPages.LightHoverPage />}
       {currOptions === "Link Triangles" && <AllPages.LinkTrianglesPage />}
-      {currOptions === "Local Polygon Mask" && <AllPages.LocalPolygonMaskPage />}
+      {currOptions === "Local Polygon Mask" && (
+        <AllPages.LocalPolygonMaskPage />
+      )}
     </div>
   );
 }
