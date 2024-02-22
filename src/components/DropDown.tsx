@@ -67,6 +67,35 @@ export const DropDown: React.FC<DropDownProps> = ({
       case "150":
         setCurrOptions("Bubble");
         break;
+      case "160":
+        // currently not supported
+        setCurrOptions("Cards");
+        break;
+      case "170":
+        setCurrOptions("Chars");
+        break;
+      case "180":
+        // currently not supported
+        setCurrOptions("Click Confetti");
+        break;
+      case "190":
+        setCurrOptions("Click Pause");
+        break;
+      case "200":
+        setCurrOptions("Collisions Absorb");
+        break;
+      case "210":
+        setCurrOptions("Collisions Bounce");
+        break;
+      case "220":
+        setCurrOptions("Collisions Destroy");
+        break;
+      case "230":
+        setCurrOptions("Color Animation");
+        break;
+      case "240":
+        setCurrOptions("Curl Noise");
+        break;
       default:
         break;
     }
@@ -93,6 +122,15 @@ export const DropDown: React.FC<DropDownProps> = ({
         <MenuItem value={130}>Big</MenuItem>
         <MenuItem value={140}>Black Hole</MenuItem>
         <MenuItem value={150}>Bubble</MenuItem>
+        {/* <MenuItem value={160}>Cards</MenuItem> */}
+        <MenuItem value={170}>Chars</MenuItem>
+        {/* <MenuItem value={180}>Click Confetti</MenuItem> */}
+        <MenuItem value={190}>Click Pause</MenuItem>
+        <MenuItem value={200}>Collisions Absorb</MenuItem>
+        <MenuItem value={210}>Collisions Bounce</MenuItem>
+        <MenuItem value={220}>Collisions Destroy</MenuItem>
+        <MenuItem value={230}>Color Animation</MenuItem>
+        <MenuItem value={240}>Curl Noise</MenuItem>
         {/* <MenuItem value={50}>Sea Anemone</MenuItem> */}
         <MenuItem value={20}>Shadow</MenuItem>
         {/* <MenuItem value={70}>Shape Arrow</MenuItem> */}

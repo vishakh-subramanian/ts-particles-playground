@@ -1,5 +1,6 @@
 import cards from "./cards";
 import chars from "./chars";
+import clickConfetti from "./clickConfetti";
 import clickPause from "./clickPause";
 import collisionsAbsorb from "./collisionsAbsorb";
 import collisionsBounce from "./collisionsBounce";
@@ -11,6 +12,7 @@ import curlNoise from "./curlNoise";
 const cOptions = {
   cards,
   chars,
+  clickConfetti,
   clickPause,
   collisionsAbsorb,
   collisionsBounce,
