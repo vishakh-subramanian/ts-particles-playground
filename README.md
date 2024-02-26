@@ -82,15 +82,15 @@ Utilized themes from TS Particles are listed below:
   - Mouse Attract
   - Mouse Bounce
   - Mouse Follow
-  - Mouse Particle
+  <!-- - Mouse Particle -->
   - Mouse Particle 2
   - Mouse Trail
-  - Mouse Trail Noise
+  <!-- - Mouse Trail Noise -->
   - Move Angle
   - Move Distance
   - Move Inside
   - Move Outside
-  - Multiple Click Emitters
+  <!-- - Multiple Click Emitters -->
   - Multiple Polygon Masks
 - N
   - NASA
@@ -133,37 +133,38 @@ Utilized themes from TS Particles are listed below:
   - Responsive
   - Ring
 - S
-  - Sea Anemone
+  <!-- - Sea Anemone -->
   - Shadow
-  - Shape Arrow
-  - Shape Cog
-  - Shape Emoji
+  <!-- - Shape Arrow -->
+  <!-- - Shape Cog -->
+  <!-- - Shape Emoji -->
   - Shape Heart
   - Shape Multiline Text
   - Shape Options
-  - Shape Path
+  <!-- - Shape Path -->
   - Shape Rounded Polygon
   - Shape Rounded Rect
-  - Shape Spiral
+  <!-- - Shape Spiral -->
   - Slow
   - Snow
-  - Sounds Audio
+  <!-- - Sounds Audio
   - Sounds Loop
   - Sounds Melodies
-  - Sounds Melody Loop
+  - Sounds Melody Loop -->
+  <!-- - Sounds Notes -->
   - Speed Decay
   - Spin
   - Star
   - Stroke Animation
   - Style
-  - SVG Replace
+  <!-- - SVG Replace -->
 - T
-  - Test
+  <!-- - Test -->
   - Text Mask
   - Text Mask Multiline
   - Themes
-  - Tilt
-  - Trail
+  <!-- - Tilt -->
+  <!-- - Trail -->
   - Trail Image
   - Triangles
   - Twinkle
@@ -172,8 +173,8 @@ Utilized themes from TS Particles are listed below:
   - Vibrate
   - Virus
 - W
-  - Warp
-  - Wobble
+  <!-- - Warp -->
+  <!-- - Wobble -->
 - X
 - Y
 - Z
