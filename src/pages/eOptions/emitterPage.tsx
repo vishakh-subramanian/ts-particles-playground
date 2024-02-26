@@ -3,6 +3,7 @@ import { Particles } from "react-tsparticles";
 import { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 import allOptions from "../../configs";
+
 export const EmitterPage: React.FC = () => {
   const initParticles = useCallback(async (engine: Engine) => {
     console.log(engine);

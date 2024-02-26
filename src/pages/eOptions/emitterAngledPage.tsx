@@ -3,6 +3,9 @@ import { Particles } from "react-tsparticles";
 import { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 import allOptions from "../../configs";
+
+// TODO: Currently broken, nothing loads in browser
+
 export const EmitterAngledPage: React.FC = () => {
   const initParticles = useCallback(async (engine: Engine) => {
     console.log(engine);
