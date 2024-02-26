@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <DropDown currPage={currPage} setCurrPage={setCurrPage}></DropDown>
+      <DropDown currPage={currPage} setCurrPage={setCurrPage} />
       {PageMap[currPage]}
     </div>
   );

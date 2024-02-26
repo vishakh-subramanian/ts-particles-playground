@@ -7,10 +7,19 @@ import { getKeyString, letterToNum, optionMap } from "../utils/DropDownUtils";
 import "./DropDown.css";
 
 interface DropDownProps {
+  /** @description current background selected */
   currPage: string;
+  /** @description sets the current background */
   setCurrPage: React.Dispatch<React.SetStateAction<string>>;
 }
 
+/**
+ * Custom Selection of backgrounds
+ *
+ * @param currPage
+ * @param setCurrPage
+ * @returns
+ */
 export const DropDown: React.FC<DropDownProps> = ({
   currPage,
   setCurrPage,

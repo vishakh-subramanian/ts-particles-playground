@@ -1,5 +1,8 @@
 import * as AllPages from "../pages/index";
 
+/**
+ * Map of all pages
+ */
 export const PageMap: { [key: string]: JSX.Element } = {
   Absorbers: <AllPages.AbsorbersPage />,
   "Among Us": <AllPages.AmongUsPage />,

@@ -1,3 +1,6 @@
+/**
+ * Map of backgrounds to number values for menu items in the Select
+ */
 export const optionMap: { [key: string]: { value: number; label: string }[] } =
   {
     A: [
