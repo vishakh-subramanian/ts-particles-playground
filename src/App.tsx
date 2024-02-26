@@ -87,6 +87,114 @@ function App() {
       {currOptions === "Local Polygon Mask" && (
         <AllPages.LocalPolygonMaskPage />
       )}
+      {currOptions === "Manual" && <AllPages.ManualPage />}
+      {currOptions === "Motion Disable" && <AllPages.MotionDisablePage />}
+      {currOptions === "Motion Reduce" && <AllPages.MotionReducePage />}
+      {currOptions === "Mouse Attract" && <AllPages.MouseAttractPage />}
+      {currOptions === "Mouse Bounce" && <AllPages.MouseBouncePage />}
+      {currOptions === "Mouse Follow" && <AllPages.MouseFollowPage />}
+      {currOptions === "Mouse Particle" && <AllPages.MouseParticlePage />}
+      {currOptions === "Mouse Particle 2" && <AllPages.MouseParticle2Page />}
+      {currOptions === "Mouse Trail" && <AllPages.MouseTrailPage />}
+      {currOptions === "Mouse Trail Noise" && <AllPages.MouseTrailNoisePage />}
+      {currOptions === "Move Angle" && <AllPages.MoveAnglePage />}
+      {currOptions === "Move Distance" && <AllPages.MoveDistancePage />}
+      {currOptions === "Move Inside" && <AllPages.MoveInsidePage />}
+      {currOptions === "Move Outside" && <AllPages.MoveOutsidePage />}
+      {currOptions === "Multiple Click Emitters" && (
+        <AllPages.MultipleClickEmittersPage />
+      )}
+      {currOptions === "Multiple Polygon Masks" && (
+        <AllPages.MultiplePolygonMasksPage />
+      )}
+      {currOptions === "NASA" && <AllPages.NasaPage />}
+      {currOptions === "No Clear" && <AllPages.NoClearPage />}
+      {currOptions === "Noise Planes" && <AllPages.NoisePlanesPage />}
+      {currOptions === "Nyan Cat" && <AllPages.NyancatPage />}
+      {currOptions === "Nyan Cat 2" && <AllPages.Nyancat2Page />}
+      {currOptions === "Orbit" && <AllPages.OrbitPage />}
+      {currOptions === "Parallax" && <AllPages.ParallaxPage />}
+      {currOptions === "Path Polygon Mask" && <AllPages.PathPolygonMaskPage />}
+      {currOptions === "Path Svg" && <AllPages.PathSvgPage />}
+      {currOptions === "Path Zig Zag" && <AllPages.PathZigZagPage />}
+      {currOptions === "Planes" && <AllPages.PlanesPage />}
+      {currOptions === "Plasma" && <AllPages.PlasmaPage />}
+      {currOptions === "Poisson" && <AllPages.PoissonPage />}
+      {currOptions === "Polygon Mask" && <AllPages.PolygonMaskPage />}
+      {currOptions === "Polygons" && <AllPages.PolygonsPage />}
+      {currOptions === "Pop" && <AllPages.PopPage />}
+      {currOptions === "Random" && <AllPages.RandomPage />}
+      {currOptions === "React Bubbles" && <AllPages.ReactBubblesPage />}
+      {currOptions === "React Defaults" && <AllPages.ReactDefaultsPage />}
+      {currOptions === "React Multiple Images" && (
+        <AllPages.ReactMultipleImagesPage />
+      )}
+      {currOptions === "React Night Sky" && <AllPages.ReactNightSkyPage />}
+      {currOptions === "React Polygon Mask" && (
+        <AllPages.ReactPolygonMaskPage />
+      )}
+      {currOptions === "React Simple" && <AllPages.ReactSimplePage />}
+      {currOptions === "React Snow" && <AllPages.ReactSnowPage />}
+      {currOptions === "Reduce Duplicates" && <AllPages.ReduceDuplicatesPage />}
+      {currOptions === "Repulse" && <AllPages.RepulsePage />}
+      {currOptions === "Repulse Back" && <AllPages.RepulseBackPage />}
+      {currOptions === "Repulse Circ" && <AllPages.RepulseCircPage />}
+      {currOptions === "Repulse Cubic" && <AllPages.RepulseCubicPage />}
+      {currOptions === "Repulse Expo" && <AllPages.RepulseExpoPage />}
+      {currOptions === "Repulse Quart" && <AllPages.RepulseQuartPage />}
+      {currOptions === "Repulse Quint" && <AllPages.RepulseQuintPage />}
+      {currOptions === "Repulse Sine" && <AllPages.RepulseSinePage />}
+      {currOptions === "Responsive" && <AllPages.ResponsivePage />}
+      {currOptions === "Ring" && <AllPages.RingPage />}
+      {currOptions === "Sea Anemone" && <AllPages.SeaAnemonePage />}
+      {currOptions === "Shadow" && <AllPages.ShadowPage />}
+      {currOptions === "Shape Arrow" && <AllPages.ShapeArrowPage />}
+      {currOptions === "Shape Cog" && <AllPages.ShapeCogPage />}
+      {currOptions === "Shape Emoji" && <AllPages.ShapeEmojiPage />}
+      {currOptions === "Shape Heart" && <AllPages.ShapeHeartPage />}
+      {currOptions === "Shape Multiline Text" && (
+        <AllPages.ShapeMultilineTextPage />
+      )}
+      {currOptions === "Shape Options" && <AllPages.ShapeOptionsPage />}
+      {currOptions === "Shape Path" && <AllPages.ShapePathPage />}
+      {currOptions === "Shape Rounded Polygon" && (
+        <AllPages.ShapeRoundedPolygonPage />
+      )}
+      {currOptions === "Shape Rounded Rect" && (
+        <AllPages.ShapeRoundedRectPage />
+      )}
+      {currOptions === "Shape Spiral" && <AllPages.ShapeSpiralPage />}
+      {currOptions === "Slow" && <AllPages.SlowPage />}
+      {currOptions === "Snow" && <AllPages.SnowPage />}
+      {currOptions === "Sounds Audio" && <AllPages.SoundsAudioPage />}
+      {currOptions === "Sounds Loop" && <AllPages.SoundsLoopPage />}
+      {currOptions === "Sounds Melodies" && <AllPages.SoundsMelodiesPage />}
+      {currOptions === "Sounds Melody Loop" && (
+        <AllPages.SoundsMelodyLoopPage />
+      )}
+      {currOptions === "Sounds Notes" && <AllPages.SoundsNotesPage />}
+      {currOptions === "Speed Decay" && <AllPages.SpeedDecayPage />}
+      {currOptions === "Spin" && <AllPages.SpinPage />}
+      {currOptions === "Star" && <AllPages.StarPage />}
+      {currOptions === "Stroke Animation" && <AllPages.StrokeAnimationPage />}
+      {currOptions === "Style" && <AllPages.StylePage />}
+      {currOptions === "Svg Replace" && <AllPages.SvgReplacePage />}
+      {currOptions === "Test" && <AllPages.TestPage />}
+      {currOptions === "Text Mask" && <AllPages.TextMaskPage />}
+      {currOptions === "Text Mask Multiline" && (
+        <AllPages.TextMaskMultilinePage />
+      )}
+      {currOptions === "Themes" && <AllPages.ThemesPage />}
+      {currOptions === "Tilt" && <AllPages.TiltPage />}
+      {currOptions === "Trail" && <AllPages.TrailPage />}
+      {currOptions === "Trail Image" && <AllPages.TrailImagePage />}
+      {currOptions === "Triangles" && <AllPages.TrianglesPage />}
+      {currOptions === "Twinkle" && <AllPages.TwinklePage />}
+      {currOptions === "Vibrate" && <AllPages.VibratePage />}
+      {currOptions === "Virus" && <AllPages.VirusPage />}
+      {currOptions === "Warp" && <AllPages.WarpPage />}
+      {currOptions === "Wobble" && <AllPages.WobblePage />}
+      {currOptions === "Z Index" && <AllPages.ZIndexPage />}
     </div>
   );
 }
