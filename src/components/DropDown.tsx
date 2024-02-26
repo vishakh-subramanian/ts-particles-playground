@@ -47,15 +47,19 @@ export const DropDown: React.FC<DropDownProps> = ({
       <FormControl
         id="form"
         variant="standard"
-        sx={{ m: 1, minWidth: 120, zIndex: 1 }}
+        sx={{ m: 1, width: 60, zIndex: 1 }}
       >
-        <InputLabel id="input-label-1">First Letter</InputLabel>
+        <InputLabel id="input-label-1" sx={{ color: "white" }}>
+          First Letter
+        </InputLabel>
         <Select
           labelId="demo-simple-select-standard-label-1"
           id="select1"
           value={option1}
           onChange={handleChange}
           label="First Letter"
+          sx={{ backgroundColor: "white" }}
+          MenuProps={{ sx: { height: "300px" } }}
         >
           <MenuItem value="A">A</MenuItem>
           <MenuItem value="B">B</MenuItem>
@@ -88,15 +92,19 @@ export const DropDown: React.FC<DropDownProps> = ({
       <FormControl
         id="form2"
         variant="standard"
-        sx={{ m: 1, minWidth: 120, zIndex: 1 }}
+        sx={{ m: 1, minWidth: 225, zIndex: 1 }}
       >
-        <InputLabel id="input-label-2">Background</InputLabel>
+        <InputLabel id="input-label-2" sx={{ color: "white" }}>
+          Background
+        </InputLabel>
         <Select
           labelId="demo-simple-select-standard-label-2"
           id="select2"
           value={option2}
           onChange={handleChange2}
           label="Background"
+          sx={{ backgroundColor: "white" }}
+          MenuProps={{ sx: { height: "300px" } }}
         >
           {option1 && option1[0] && optionMap[option1[0]]
             ? optionMap[option1[0]].map(function (item) {
