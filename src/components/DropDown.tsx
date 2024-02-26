@@ -7,13 +7,13 @@ import { getKeyString, letterToNum, optionMap } from "../utils/DropDownUtils";
 import "./DropDown.css";
 
 interface DropDownProps {
-  currOptions: string;
-  setCurrOptions: React.Dispatch<React.SetStateAction<string>>;
+  currPage: string;
+  setCurrPage: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const DropDown: React.FC<DropDownProps> = ({
-  currOptions,
-  setCurrOptions,
+  currPage,
+  setCurrPage,
 }) => {
   const [option1, setOption1] = React.useState("");
   const [option2, setOption2] = React.useState("");
@@ -26,7 +26,7 @@ export const DropDown: React.FC<DropDownProps> = ({
       (element) => element.value === index + 1
     );
     if (currOption?.label) {
-      setCurrOptions(currOption.label);
+      setCurrPage(currOption.label);
     }
   };
 
@@ -38,7 +38,7 @@ export const DropDown: React.FC<DropDownProps> = ({
       (element) => element.value === numValue
     );
     if (currOption?.label) {
-      setCurrOptions(currOption.label);
+      setCurrPage(currOption.label);
     }
   };
 
