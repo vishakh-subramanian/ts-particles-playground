@@ -15,9 +15,9 @@ Utilized themes from TS Particles are listed below:
   - Black Hole
   - Bubble
 - C
-  - Cards
+  <!-- - Cards -->
   - Chars
-  - Click Confetti
+  <!-- - Click Confetti -->
   - Click Pause
   - Collisions Absorb
   - Collisions Bounce
@@ -39,35 +39,35 @@ Utilized themes from TS Particles are listed below:
   - Effect Bubble
   - Effect Trail
   - Emitter
-  - Emitter Absorb
+  <!-- - Emitter Absorb
   - Emitter Angled
   - Emitter Images
-  - Emitter Image Shape
-  - Emitter Paths
+  - Emitter Image Shape -->
+  <!-- - Emitter Paths
   - Emitter Shapes
   - Emitter Spawn Color
   - Emitter Text Shape
-  - Emitter Text Stroke Shape
+  - Emitter Text Stroke Shape -->
 - F
-  - Fireworks
-  - Fireworks 2
+  <!-- - Fireworks -->
+  <!-- - Fireworks 2 -->
   - Font Awesome
   - Forward
 - G
   - GIFs
   - Grab Random Color
   - Gradients
-  - Gravity
-  - Growing
+  <!-- - Gravity
+  - Growing -->
 - H
-  - Hexagon Path
+  <!-- - Hexagon Path -->
   - Hollow Knight
-  - Hyperspace
+  <!-- - Hyperspace -->
 - I
   - Image Mask
   - Images
   - Images Directions
-  - Infection
+  <!-- - Infection -->
 - J
 - K
 - L
