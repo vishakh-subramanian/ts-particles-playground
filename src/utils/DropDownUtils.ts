@@ -219,4 +219,5 @@ export const letterToNum: { [key: string]: number } = {
   Y: 24,
   Z: 25,
 };
+
 export const getKeyString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
