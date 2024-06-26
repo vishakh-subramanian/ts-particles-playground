@@ -68,8 +68,9 @@ Utilized themes from TS Particles are listed below:
   - Images
   - Images Directions
   <!-- - Infection -->
-- J
+<!-- - J
 - K
+-->
 - L
   - Life
   - Light Hover
@@ -111,7 +112,7 @@ Utilized themes from TS Particles are listed below:
   - Polygon Mask
   - Polygons
   - Pop
-- Q
+<!-- - Q -->
 - R
   - Random
   - React Bubbles
@@ -168,15 +169,15 @@ Utilized themes from TS Particles are listed below:
   - Trail Image
   - Triangles
   - Twinkle
-- U
+<!-- - U -->
 - V
   - Vibrate
   - Virus
-- W
+<!-- - W -->
   <!-- - Warp -->
   <!-- - Wobble -->
-- X
-- Y
+<!-- - X
+- Y -->
 - Z
   - Z Index
 
